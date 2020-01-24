@@ -1,0 +1,16 @@
+Did you before know about the techniques Git, GitHub, Markdown and/or GitHub Pages?
+
+I had a limited knowledge before this introduction. We have used github before in previous courses as our mandatory version control. I have not used Git in the sense of console but rather relied on the GitHub Desktop App before this. I had never heard of Github Pages before this. I have used markdown before, as Discord, for example supports it. 
+
+Have you ever created websites before?
+
+We have used html for web services, but that was a single lab. I have never created proper a webpage before. 
+
+Briefly explain your experience and knowledge of web application development.
+
+My knowledge of web development is very limited. I have had brief experience with web services in the past. I have done a little bit of Javascript. I would say that my knowledge is not within web application development, but just network technology briefly touching on the subject. 
+
+What is your TIL for this course section?
+
+Today I learned about GitHub Pages. I never knew this existed, despite using GitHub for a long time. I had always wanted to try and make a dashboard for my Discord bot that I made to compete with the successful and in my opinion terribly coded bot Dynobot. I find that, while not a permanent solution, that GitHub pages would be an excellent to test this out. I also further developed my knowledge with Git console commands. I did not know about tags before this.
+
