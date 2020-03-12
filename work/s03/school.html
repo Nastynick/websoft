@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+<link href="style.css" rel="stylesheet">
+<style>
+body {
+  background-image: url('resources/images/dark-honeycomb.png');
+}
+</style>
+
+<script>
+ function CreateTableFromJSON() {
+
+
+   fetch('data/1081.json')
+           .then((response) => {
+             return response.json();
+           })
+           .then((data) => {
+             var jsonData = data;
+
+             var col = [];
+             for (var i = 0; i < jsonData.length; i++) {
+               for (var key in jsonData[i]) {
+                 if (col.indexOf(key) === -1) {
+                   col.push(key);
+                 }
+               }
+             }
+             var table = document.createElement("table");
+             var tr = table.insertRow(-1);
+
+             for (var i = 0; i < col.length; i++) {
+               var th = document.createElement("th");
+               th.innerHTML = col[i];
+               tr.appendChild(th);
+             }
+             for (var i = 0; i < jsonData.length; i++) {
+
+               tr = table.insertRow(-1);
+
+               for (var j = 0; j < col.length; j++) {
+                 var tabCell = tr.insertCell(-1);
+                 tabCell.innerHTML = jsonData[i][col[j]];
+               }
+             }
+             var divContainer = document.getElementById("container");
+             divContainer.innerHTML = "";
+             divContainer.appendChild(table);
+           });
+
+ }
+
+window.onload = CreateTableFromJSON;
+
+</script>
+  <title></title>
+
+</head>
+
+<body>
+  <ul class="horizontal">
+    <li class="horizontal"><a class="active" href="index.html">Home</a></li>
+    <li class="horizontal"><a href="report.html">Reports</a></li>
+    <li class="horizontal"><a href="school.html">School(A.3)</a></li>
+    <li class="horizontal"><a href="about.html">About this website</a></li>
+    <li class="horizontal"><a href="me.html">About me</a></li>
+  </ul>
+
+
+<h1 class="headerText">About the course page</h1>
+  <div id="mObject" class="mObject"></div>
+  <script type="text/javascript" src="../php/javascript/movableObject.js"></script>
+
+<p id="container"></p>
+  <footer>
+    <p style="color:white;text-align:center">Made by Niclas E.</p>
+  </footer>
+</body>
+</html>
