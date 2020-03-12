@@ -1,0 +1,25 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<table>
+    <tr>
+        @foreach (var account in Model.Accounts.First().GetType().GetProperties())
+        {
+            <th>@account.Name</th>
+        }
+    </tr>
+    
+    @foreach (var account in Model.Accounts)
+    {
+        <tr>
+            <td>@account.Number</td>
+            <td>@account.Balance</td>
+            <td>@account.Label</td>
+            <td>@account.Owner</td>
+        </tr>
+    }
+    
+</table>
