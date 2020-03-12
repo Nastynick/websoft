@@ -1,0 +1,174 @@
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+ul.horizontal {
+position:fixed;
+float: left;
+top: 0;
+width: 100%;
+list-style-type: none;
+margin: -8px -8px;
+padding: 0;
+overflow: hidden;
+background-color: #333;
+box-shadow: 0px 1px 8px;
+z-index: 1;
+}
+
+h1.headerText {
+  text-align:center;
+  padding-top: 50px;
+  font-size: 300%;
+  color:white;
+  font-family:roboto
+}
+
+ul.testing {
+  width: 5%;
+  height: auto;
+  overflow: auto;
+  list-style-type: none;
+}
+
+li.testing {
+  position: relative;
+}
+
+li.testing a{
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+
+li.testing a:hover {
+  background-color: #111;
+}
+
+li.horizontal {
+border-right: 1px solid #bbb;
+float: left;
+}
+
+li.horizontal:last-child {
+border-left: 1px solid #bbb;
+float: right;
+}
+
+li.horizontal:first-child {
+border-left: 1px solid #bbb;
+}
+
+li.horizontal a {
+display: block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+li.horizontal a:hover {
+background-color: #111;
+}
+
+li.vertical a:hover {
+background-color: #111;
+}
+
+h1 {
+  text-align: center;
+  color:white;
+}
+
+ul.vertical {
+  margin: 32px -8px;
+  list-style-type: none;
+  padding: 0;
+  width: 17.5%;
+  background-color: #333;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  box-shadow: 0px 1px 8px;
+  z-index: 0;
+}
+
+li.vertical a {
+  display: block;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-bottom: 1px solid #bbb;
+}
+
+section {
+  margin:auto;
+  margin-left: 260px;
+  margin-right: 25px;
+  text-align:left;
+  color:white;
+  font-family: roboto;
+}
+
+hr {
+  margin-left: 260px;
+  margin-right: 25px;
+}
+
+.hover_img a {
+  width: auto;
+  position: relative;
+  color: white;
+  display: block;
+  font-family: roboto;
+  text-decoration: none;
+}
+
+.hover_img a span {
+  display: none;
+  z-index:99;
+  position: fixed;
+  top: 25%;
+  right: 25%;
+}
+
+.hover_img a:hover span {
+  display: block;
+}
+
+
+.container {
+  margin: auto;
+  width: auto;
+  position: absolute;
+  text-align: center;
+  color: white;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.top-left {
+  position: absolute;
+  top: 28px;
+  left: 32px;
+
+}
+
+.mObject {
+  width:64px;
+  height:64px;
+  background-image: url("../resources/images/dvd.png");
+  background-size: 64px;
+  position: absolute;
+  top: 500px;
+  left: 20px;
+
+}
