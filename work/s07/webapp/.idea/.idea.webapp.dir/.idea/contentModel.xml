@@ -3,7 +3,7 @@
   <component name="ContentModelStore">
     <e p="C:\Users\Orris\.Rider2019.3\system\extResources" t="IncludeRecursive" />
     <e p="C:\Users\Orris\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_.19.00" t="ExcludeRecursive" />
-    <e p="C:\Users\Orris\Desktop\Webstuff Private\testingWeb\work\s07\webapp" t="IncludeRecursive">
+    <e p="C:\Users\Orris\Desktop\Webstuff\websoft\work\s07\webapp" t="IncludeRecursive">
       <e p="appsettings.Development.json" t="Include" />
       <e p="appsettings.json" t="Include" />
       <e p="bin" t="ExcludeRecursive" />

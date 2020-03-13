@@ -4,10 +4,12 @@
 require "config.php";
 require "src/functions.php";
 
+$search = $_GET["inputSearch"];
+
 $db = connectDatabase($dsn);
 
-$stmt = $db->prepare("SELECT * FROM tech");
-$stmt->execute();
+$stmt = $db->prepare("SELECT * FROM tech WHERE id = ?");
+$stmt->execute([$search]);
 
 
 require __DIR__ . "/header.php";
